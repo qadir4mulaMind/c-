@@ -1,0 +1,1 @@
+{"name":"Local: GetMin","url":"/Users/abdulqadir/Desktop/workSpace/practice/c++/segmentTree/GetMin.cpp","tests":[{"id":1780301560812,"input":"8\n1 4 2 8 6 4 9 3\n3\n0 5\n4 6\n2 4","output":"1\n4\n2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/abdulqadir/Desktop/workSpace/practice/c++/segmentTree/GetMin.cpp","group":"local","local":true}

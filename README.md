@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Abdul Qadir
 
 🎓 B.Tech AIML Student  
@@ -83,3 +84,6 @@ https://github.com/qadir21
 ## ✨ Motto
 
 > “Great problem solvers are built through consistency, curiosity, and hard work.”
+=======
+# c-
+>>>>>>> 7e9a2833873331e1ae97aa4e5ebab3ec3c0ba556

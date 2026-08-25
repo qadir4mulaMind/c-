@@ -1,0 +1,10 @@
+DS - Visited - set, prioriority_queue<pair>, unordered_map
+
+-insert the pair of  <-1 src in the prioriority_queue
+-one by one remove the root element of the priority queue
+-if the root element already visisted 
+-we store the wt in the ans 
+-updating the maping
+-go to every neighbour
+
+ 

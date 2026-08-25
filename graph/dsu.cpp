@@ -16,7 +16,7 @@ void Union(vector<int>& parent, vector<int>& rank, int a, int b) {
     b = find(parent, b);
 
     if (a != b) { // Only merge if they are in different sets
-        if (rank[a] > rank[b]) {
+        if (rank[a] >= rank[b]) {
             parent[b] = a;
         } else if (rank[b] > rank[a]) {
             parent[a] = b;

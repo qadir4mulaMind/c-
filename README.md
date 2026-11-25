@@ -41,7 +41,7 @@ Some folders include their own sample input and output files. Check the source f
 
 ## Acknowledgments
 
-Special thanks to **Mike Shah** for his C++ lessons and tutorials, which have been an important part of my learning journey. The [`mike_shah/`](mike_shah/) directory contains related practice examples.
+Special thanks to **Mike Shah** for his C++ lessons and tutorials, which have been an important part of my learning journey. I am also grateful to **Pankaj Sharma**, **Raghav Sir**, and **PW Skills** for their teaching and guidance. Related practice examples are organized in [`mike_shah/`](mike_shah/) and [`PRACTICE_BY_PANKAJ/`](PRACTICE_BY_PANKAJ/).
 
 ## License
 

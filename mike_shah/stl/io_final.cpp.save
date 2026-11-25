@@ -1,0 +1,83 @@
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <print>
+#include <cstdio>
+#include <iomanip>
+#include <array>
+#include <string>
+#include <mutex>
+#include <algorithm>
+
+int main() {
+    std::println("--- 1. C++23 Print Functions ---");
+    std::print("Hello via std::print! ");
+    std::println("Hello via std::println!");
+    std::println("Formatted values: Decimal={}, Float={:.2f}, Hex=0x{:X}", 42, 3.14159, 255);
+    std::println(std::cout, "Forced stream delivery target: standard output stream");
+    std::println("");
+
+    std::println("--- 2. Stream-based I/O & Manipulators ---");
+    std::cout << "Boolean state (alpha): " << std::boolalpha << true << "\n";
+    std::cout << "Integer format base conversion: " << std::hex << 255 << " (Hex) " << std::dec << "\n";
+    std::cout << "Custom field padding width: [" << std::setw(8) << std::setfill('-') << 77 << "]\n\n";
+
+    std::println("--- 3. File I/O (ofstream & ifstream) ---");
+    const std::string textFile = "io_demo_output.txt";
+    {
+        std::ofstream outFile(textFile);
+        if (outFile.is_open()) {
+            outFile << "Line 1: High-level streaming abstraction test.\n";
+            outFile << "Line 2: Data writing complete.\n";
+            outFile.close();
+            std::println("Output flushed successfully to '{}'", textFile);
+        }
+    }
+    {
+        std::ifstream inFile(textFile);
+        if (inFile.is_open()) {
+            std::string lineStr;
+            std::println("Parsed input content strings:");
+            while (std::getline(inFile, lineStr)) {
+                std::println("  File Line Data -> {}", lineStr);
+            }
+            inFile.close();
+        }
+    }
+    std::println("");
+
+    std::println("--- 4. String I/O (stringstream) ---");
+    std::stringstream stringMemoryStream;
+    stringMemoryStream  identityKey >> sensorIdStr >> criticalReadingStr;
+    std::println("Extracted fields: Key='{}', ID={}, Metric={}", identityKey, sensorIdStr, criticalReadingStr);
+    std::println("");
+
+    std::println("--- 5. Fixed Array/Buffer I/O ---");
+    std::array<char, 64> manualBuffer{};
+    std::string alternativeContent = "Simulated array stream output fallback sequence";
+    std::copy_n(alternativeContent.begin(), std::min(alternativeContent.size(), manualBuffer.size() - 1), manualBuffer.begin());
+    std::println("Fallback memory buffer target value: {}", manualBuffer.data());
+    std::println("");
+
+    std::println("--- 6. Synchronized Output Execution ---");
+    std::println("Executing atomic stream write simulation sequence safely.");
+    std::println("");
+
+    std::println("--- 7. C-Style I/O Legacy Function Compatibility ---");
+    const char* legacyFilename = "c_legacy_demo.dat";
+    FILE* targetFilePtr = std::fopen(legacyFilename, "w");
+    if (targetFilePtr != nullptr) {
+        std::fprintf(targetFilePtr, "C-Style print string block numeric marker: 0\n", 9999);
+        std::fclose(targetFilePtr);
+    }
+    targetFilePtr = std::fopen(legacyFilename, "r");
+    if (targetFilePtr != nullptr) {
+        std::array<char, 128> extractionBuffer{};
+        if (std::fgets(extractionBuffer.data(), extractionBuffer.size(), targetFilePtr) != nullptr) {
+            std::print("Extracted from buffer using fgets: {}", extractionBuffer.data());
+        }
+        std::fclose(targetFilePtr);
+    }
+    return 0;
+}
+

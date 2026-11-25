@@ -1,0 +1,43 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <algorithm>
+
+constexpr std::size_t BUFFER_SIZE = 65536;
+
+int main() {
+    std::ios_base::sync_with_stdio(false);
+
+    std::ifstream inFile("input.txt", std::ios::binary);
+    std::ofstream outFile("output.txt", std::ios::binary);
+
+    if (!inFile || !outFile) {
+        std::cerr << "Error: Could not open the files successfully.\n";
+        return 1;
+    }
+
+    char inBuffer[BUFFER_SIZE];
+    char outBuffer[BUFFER_SIZE];
+    inFile.rdbuf()->pubsetbuf(inBuffer, BUFFER_SIZE);
+    outFile.rdbuf()->pubsetbuf(outBuffer, BUFFER_SIZE);
+
+    std::string line;
+    
+    while (std::getline(inFile, line)) {
+        bool hasCR = !line.empty() && line.back() == '\r';
+        if (hasCR) {
+            line.pop_back();
+        }
+
+        std::reverse(line.begin(), line.end());
+
+        outFile.write(line.data(), line.size());
+        
+        if (hasCR) {
+            outFile.put('\r');
+        }
+        outFile.put('\n');
+    }
+
+    return 0;
+}

@@ -1,0 +1,2 @@
+Line 1: Writing data to a file stream.
+Line 2: Modern C++ is robust.

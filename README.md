@@ -7,7 +7,8 @@ A collection of C++ learning exercises, algorithm and data-structure implementat
 | Area | Folders |
 | --- | --- |
 | Language fundamentals and patterns | `Basic/`, `CONDITIONAL_STATEMENT/`, `TERNARYandSWITCH/`, `PATTERNPRITTING/` |
-| Core C++ and object-oriented programming | `OOPS/`, `POINTER/`, `FileHandling.cpp/`, `advance-cpp/`, `mike_shah/` |
+| Core C++ and object-oriented programming | `OOPS/`, `POINTER/`, `FileHandling.cpp/`, `advance-cpp/` |
+| C++ concept and library lessons | `mike_shah/` covers language features, classes and templates, inheritance, pointers and object lifetime, stream I/O, STL containers/iterators/algorithms, and a small custom `MiniSTL/` implementation. |
 | Arrays, strings, matrices, and vectors | `ARRAY/`, `STRING/`, `MATRIX/`, `VECTOR/`, `VectorMatrix.cpp/` |
 | Bitwise and problem-solving techniques | `BitwiseOperator/`, `bitManipulation/`, `ShortcutBitWiseLogical/`, `Searching/`, `Sorting/`, `PrefixSum/`, `SlidingWindow/` |
 | Recursion and algorithm design | `RECURSION/`, `backtracking/`, `dp/` |

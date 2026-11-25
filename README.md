@@ -1,86 +1,51 @@
-# Abdul Qadir
+# C++ Practice and Projects
 
-🎓 B.Tech AIML Student  
-💻 DSA Enthusiast | Problem Solver | GATE CSE & DA Aspirant  
+A collection of C++ learning exercises, algorithm and data-structure implementations, and small projects. The repository is organized by topic so examples can be explored independently.
 
----
+## Repository guide
 
-## 👨‍💻 About Me
+| Area | Folders |
+| --- | --- |
+| Language fundamentals and patterns | `Basic/`, `CONDITIONAL_STATEMENT/`, `TERNARYandSWITCH/`, `PATTERNPRITTING/` |
+| Core C++ and object-oriented programming | `OOPS/`, `POINTER/`, `FileHandling.cpp/`, `advance-cpp/`, `mike_shah/` |
+| Arrays, strings, matrices, and vectors | `ARRAY/`, `STRING/`, `MATRIX/`, `VECTOR/`, `VectorMatrix.cpp/` |
+| Bitwise and problem-solving techniques | `BitwiseOperator/`, `bitManipulation/`, `ShortcutBitWiseLogical/`, `Searching/`, `Sorting/`, `PrefixSum/`, `SlidingWindow/` |
+| Recursion and algorithm design | `RECURSION/`, `backtracking/`, `dp/` |
+| Data structures | `linkedList/`, `doublyLinkedList/`, `stack/`, `queue/`, `heap/`, `tree/`, `graph/`, `segmentTree/`, `setAndMap/` |
+| Practice collections and projects | `PRACTICE_BY_PANKAJ/`, `FirstProject/`, `project/` |
 
-Hello! I'm **Abdul Qadir**, a passionate Computer Science student with a deep interest in:
+The repository root also contains a few individual examples, including `C++ONESHOT.cpp` and `function_pointer.cpp`. Folder and file names are retained as they appear in the source tree.
 
-- Mathematics
-- Data Structures & Algorithms
-- Problem Solving
-- Competitive Programming
-- Core Computer Science Subjects
+## Compile and run an example
 
-I enjoy solving challenging problems, improving algorithmic thinking, and strengthening my understanding of computer science fundamentals.
+There is no single application or root-level build target. Many source files are independent programs, often with their own `main()` function. Compile one file at a time with a C++ compiler:
 
-Currently, I am actively preparing for **GATE CSE** and **GATE DA** while continuously improving my programming and analytical skills.
+```bash
+c++ -std=c++17 ARRAY/Array_basic.cpp -o /tmp/array_basic
+/tmp/array_basic
+```
 
----
+Use the language standard supported by the particular example if it differs. Programs that read input accept it through the terminal; you can also redirect a file:
 
-## 🚀 Areas of Interest
+```bash
+./program < path/to/input.txt
+```
 
-- Advanced Data Structures & Algorithms
-- Mathematical Problem Solving
-- Competitive Coding
-- Machine Learning
-- Data Science
-- System Design Fundamentals
+Some folders include their own sample input and output files. Check the source file and its folder for any program-specific instructions.
 
----
+## Projects
 
-## 🛠️ Technical Skills
+- [Guess Game](project/Guess-Game/) — a console-based number-guessing game.
+- [Hospital Management](project/Hospital-Management/) — a separate project with its own README and setup details.
 
-### Programming Languages
-- C++
-- C
-- Python
-- Java
-- R
+## License
 
-### Core CS Subjects
-- Data Structures & Algorithms
-- Operating Systems
-- Computer Networks
-- DBMS
-- Computer Organization & Architecture
-- Object-Oriented Programming
-- Software Engineering
+This repository is licensed under the [MIT License](LICENSE).
 
----
+## Author
 
-## 📚 Strong Knowledge In
+**Abdul Qadir**
 
-- GATE CSE Subjects
-- GATE DA Subjects
-- Algorithmic Thinking
-- Optimization Techniques
-- Logical Reasoning
-- Mathematics for Computer Science
-
----
-
-## 💡 Coding Profile
-
-I love solving coding problems and exploring efficient approaches to algorithms and data structures.  
-DSA and problem solving are my strongest areas, and I enjoy tackling complex logical and mathematical challenges.
-
----
-
-## 🌐 Connect With Me
-
-### LinkedIn
-www.linkedin.com/in/abdul-qadir-4aa642204
-
-### GitHub
-https://github.com/qadir4mulaMind
-
----
-
-## ✨ Motto
-
-> “Great problem solvers are built through consistency, curiosity, and hard work.”
+- [GitHub](https://github.com/qadir4mulaMind)
+- [LinkedIn](https://www.linkedin.com/in/abdul-qadir-4aa642204)
 
